@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'RiaSans-Regular';
-    src: url("../font/RiaSans-Regular.ttf") format("truetype");
+    src: url("RiaSans-Regular.ttf") format("truetype");
 }
 
 * {
@@ -78,13 +78,6 @@ header {
 
 }
 
-.navi>li>a:hover {
-    color: #bd0218;
-    /* background-color: #f8db89; */
-
-}
-
-
 .submenu {
     width: 200px;
     position: absolute;
@@ -135,7 +128,6 @@ header {
     top: 40%;
     transform: translate(-50%, -40%);
     position: absolute;
-    /* background-color: rgba(100,100,100,0.5); */
 }
 
 .imgslide .im_texts {
@@ -147,7 +139,6 @@ header {
     top: 40%;
     transform: translate(-50%, -40%);
     position: absolute;
-    /* background-color: rgba(100,100,100,0.5); */
 }
 
 .imgslide .im2_text {
@@ -159,7 +150,6 @@ header {
     top: 53%;
     position: absolute;
     transform: translate(-50%, -53%);
-    /* background-color: rgba(100,100,100,0.5); */
     border-top: 2px solid #fff;
 }
 
@@ -172,7 +162,6 @@ header {
     top: 53%;
     position: absolute;
     transform: translate(-50%, -53%);
-    /* background-color: rgba(100,100,100,0.5); */
     border-top: 2px solid #fff;
 }
 
@@ -204,7 +193,6 @@ header {
 
 .gall {
     display: flex;
-    /* justify-content: space-between; */
     gap: 20px;
 }
 
@@ -262,7 +250,7 @@ header {
     left: 20%;
     top: 9%;
     background-color: #fff;
-    background-image: url('../images/pop.png');
+    background-image: url('pop.png');
     background-size: 550px 750px;
     display: none;
 }
@@ -657,4 +645,5 @@ footer {
     /* background-color: rgba(100,100,100,0.5); */
     border-top: 2px solid #fff;
 }
+
 
