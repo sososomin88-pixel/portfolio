@@ -1,0 +1,416 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/templates/modern-business)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+  background-color: #2C3E50;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+/*******************
+  추가: 2020-07-06 
+********************/
+.container {
+  width: 100%;
+  max-width: 1890px;
+}
+
+/***********************
+  index.html: top menu
+************************/
+.navbar {background-color:#385776 !important;}
+.container .navbar-brand {font-weight:800; font-size:1.4rem;}
+.container .navbar-collapse ul.navbar-nav li {float:left; line-height:20px; font-size:20px; font-weight:600; margin-right:30px;}
+.container .navbar-collapse ul.navbar-nav li:hover{border-radius: .25rem; background-color:#2C3E50;}
+.container .navbar-collapse .active a{color:#85bd67 !important;}
+
+/****************************
+  index.html: 태양광 발전 현황
+*****************************/
+.mb1 {height:auto; border: 0px solid;}
+.mb1 .mb1_h {text-align:center; padding:10px 10px; background-color:#385776;}
+.mb1 .mb1_h .title {width:80%;  text-align:center; display:inline-block; padding:5px 0px; background-color:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+.mb1 .mb1_b {background-color:#385776; height:245px; padding:0px 10px;}
+.mb1 .mb1_b .mb1_b_sb1 .title {color:#fff; font-weight:600; text-align:center;}
+.mb1 .mb1_b .mb1_b_sb1 .contents {position:absolute; text-align:center; width:95%; padding-top:55px;}
+.mb1 .mb1_b .mb1_b_sb1 .contents .chart_txt {font-size:18px; color:#fff; font-weight: bold}
+.mb1 .mb1_b .mb1_b_sb1 .chart {position:relative; height:170px;}
+.mb1 .mb1_b .mb1_b_sb2 .title {color:#fff; font-weight:600; text-align:center;}
+.mb1 .mb1_b .mb1_b_sb2 dl {font-size:16px; color:#fff; font-weight:600;}
+.mb1 .mb1_b .mb1_b_sb2 dt {padding-left:30px; margin-bottom:0px;}
+.mb1 .mb1_b .mb1_b_sb2 dd {padding-left:30px; margin-bottom:0px;}
+
+.mb1 .mb1_f {background-color:#34495E; padding:10px 10px;}
+.mb1 .mb1_f .mb1_f_chart {height:180px;}
+.mb1 .mb1_f .mb1_f_move a {font-weight:bold; color:#fff; font-size:12px; float:right; text-decoration:none;}
+.mb1 .mb1_f .mb1_f_move a img {vertical-align: text-top !important;}
+
+/******************************
+  index.html: 인버터 발전 현황
+/******************************/
+.m-i-list {margin:40px 0px 0px 30px;}
+.m-i-list .m-i-btn {background-color:#34495e; text-align:center; color:#fff; font-weight:600; margin-bottom:10px;}
+.m-i-list .active{background-color:#34495e !important; text-align:center !important; color:#85bd67 !important; font-weight:600 !important;}
+
+.mb2 {height:auto; border: 0px solid;}
+.mb2 .mb2_h {text-align:center; padding:10px 10px; background-color:#385776;}
+.mb2 .mb2_h .title {width:80%;  text-align:center; display:inline-block; padding:5px 0px; background-color:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+.mb2 .mb2_b {background-color:#385776; height:245px; padding:0px 10px;}
+.mb2 .mb2_b .mb2_b_pv .title {color:#fff; font-weight:600; text-align:left;}
+.mb2 .mb2_b .mb2_b_pv dl {font-size:16px; color:#fff; font-weight:600;}
+.mb2 .mb2_b .mb2_b_fc .title {color:#fff; font-weight: 600; text-align:left;}
+.mb2 .mb2_b .mb2_b_fc dl {font-size:16px; color:#fff; font-weight:600;}
+.mb2 .mb2_b .mb2_b_dab .title {color:#fff; font-weight: 600; text-align:left;}
+.mb2 .mb2_b .mb2_b_dab dl {font-size:16px; color:#fff; font-weight:600;}
+
+.mb2 .mb2_f {background-color:#34495E; padding:10px 10px 10px 10px;}
+.mb2 .mb2_f .mb2_f_sb1 {height:180px; padding:30px 0px 0px 30px; text-align:center;}
+.mb2 .mb2_f .mb2_f_sb1 .mb2_f_sb1_contents {line-height:50px; padding:10px 0px;}
+.mb2 .mb2_f .mb2_f_sb1 .mb2_f_sb1_contents .con_title {font-size:18px; font-weight:600; color:#fff;}
+.mb2 .mb2_f .mb2_f_sb1 .mb2_f_sb1_contents .con_value {font-size:24px; font-weight:600; color:#fff;}
+.mb2 .mb2_f .mb2_f_sb2 {height:165px; padding: 25px 25px;}
+.mb2 .mb2_f .mb2_f_sb2 img {width:inherit; padding:20px 0px;}
+.mb2 .mb2_f .mb2_f_move a {font-weight:bold; color:#fff; font-size:12px; float:right; text-decoration:none;}
+.mb2 .mb2_f .mb2_f_move a img {vertical-align: text-top !important;}
+
+/***************************
+  index.html: ESS 발전 현황
+/***************************/
+
+.mb3 {height:auto; border: 0px solid;}
+.mb3 .mb3_h {text-align:center; padding:10px 10px; background-color:#385776;}
+.mb3 .mb3_h .title {width:80%;  text-align:center; display:inline-block; padding:5px 0px; background-color:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+.mb3 .mb3_b {background-color:#385776; height:245px; padding:0px 10px;}
+.mb3 .mb3_b .mb3_b_sb1 .title {color:#fff; font-weight:600; text-align:center;}
+.mb3 .mb3_b .mb3_b_sb1 .contents {position:absolute; text-align:center; width:95%; padding-top:65px}
+.mb3 .mb3_b .mb3_b_sb1 .contents .chart_txt {font-size:20px; color:#fff; font-weight: bold}
+.mb3 .mb3_b .mb3_b_sb1 .chart {position:relative; height:170px;}
+.mb3 .mb3_b .mb3_b_sb2 {text-align:center;}
+.mb3 .mb3_b .mb3_b_sb2 .box {color:#fff; display: inline-block; padding: 10px 10px 10px 10px;}
+.mb3 .mb3_b .mb3_b_sb2 .box .box_title {color:#fff; font-weight:600; text-align:center;}
+.mb3 .mb3_b .mb3_b_sb2 .box .box_value {color:#85bd67; font-weight:600;}
+.mb3 .mb3_b .mb3_b_sb2 hr {border:2px solid #34495E; margin:10px 10px;}
+
+.mb3 .mb3_f {background-color:#34495E; padding:10px 10px;}
+.mb3 .mb3_f .mb3_f_chart {height:180px;}
+.mb3 .mb3_f .mb3_f_move a {font-weight:bold; color:#fff; font-size:12px; float:right; text-decoration:none;}
+.mb3 .mb3_f .mb3_f_move a img {vertical-align: text-top !important;}
+
+/*******************************
+  index.html: 전기차 충전기 현황
+********************************/
+.mb4 {height:auto; border: 0px solid;}
+.mb4 .mb4_h {text-align:center; padding:10px 10px; background-color:#385776;}
+.mb4 .mb4_h .title {width:80%;  text-align:center; display:inline-block; padding:5px 0px; background-color:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+.mb4 .mb4_b {background-color:#385776; height:143px;}
+.mb4 .mb4_b .mb4_b_sb1 {text-align:center;}
+.mb4 .mb4_b .mb4_b_sb1 .box {color:#fff; display: inline-block; padding: 5px 5px;}
+.mb4 .mb4_b .mb4_b_sb1 .box .box_title {color:#fff; font-weight:600; text-align:center;}
+.mb4 .mb4_b .mb4_b_sb2 img {margin:0px auto; width:180px;}
+
+.mb4 .mb4_f {background-color:#34495E; padding:10px 10px; height:209px;}
+.mb4 .mb4_f .mb4_f_box {position: relative;}
+.mb4 .mb4_f .mb4_f_box .box {margin-top:5px;}
+.mb4 .mb4_f .mb4_f_box .box .mb4_f_sb1_box {padding:15px 0px 0px 35px;}
+.mb4 .mb4_f .mb4_f_box .box .mb4_f_sb1_box .box_title {color:#fff; font-weight:600; text-align:left; margin:10px 0px;}
+.mb4 .mb4_f .mb4_f_box .box .mb4_f_sb1_box .box_value {font-size:17px; color:#fff; font-weight:600;}
+.mb4 .mb4_f .mb4_f_box .box .mb4_f_sb2_box {padding:25px 0px 0px 50px;}
+.mb4 .mb4_f .mb4_f_box .box .mb4_f_sb2_box .img_txt {color:#fff; font-size:18px; display:inline-block; padding: 10px 0px 0px 30px;}
+.mb4 .mb4_f .mb4_f_move {position:absolute; bottom:10px; padding: 0px 5px;}
+.mb4 .mb4_f .mb4_f_move a {font-weight:bold; color:#fff; font-size:12px; float:right; text-decoration:none;}
+.mb4 .mb4_f .mb4_f_move a img {vertical-align: text-top !important;}
+
+/***********************
+  index.html: RTU 현황
+************************/
+.mb5 {height:auto; border: 0px solid;}
+.mb5 .mb5_h {text-align:center; padding:10px 10px; background-color:#385776;}
+.mb5 .mb5_h .title {width:80%;  text-align:center; display:inline-block; padding:5px 0px; background-color:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+.mb5 .mb5_b {background-color:#385776; height:352px; padding:10px 10px;}
+.mb5 .mb5_b .mb5_f_sub1 {text-align:left;}
+.mb5 .mb5_b .mb5_f_sub1 .title {color: #fff; font-weight:600; padding:0px 0px 0px 30px;}
+.mb5 .mb5_b .mb5_f_sub1 .box {color:#fff; display: inline-block; height:93px; padding:30px 0px 0px 30px;}
+.mb5 .mb5_b .mb5_f_sub1 .box .box_title {color:#fff; font-size:16px; font-weight:600;}
+.mb5 .mb5_b .mb5_f_sub1 .box .box_value {color:#85bd67; font-size:20px; font-weight:600;}
+.mb5 .mb5_b .mb5_f_sub1 .box2 {color:#fff; display: inline-block; padding:30px 0px 0px 30px;}
+.mb5 .mb5_b .mb5_f_sub1 .box2 dl {font-size:16px; color:#fff; font-weight:600;}
+.mb5 .mb5_b .mb5_f_sub1 .box2 dl dd {text-align:right;}
+.mb5 .mb5_b .mb5_f_sub1 hr {border:2px solid #34495E; margin:10px 0px 0px 30px;}
+.mb5 .mb5_b .mb5_f_sub2 .imgbox {position:relative; height:303px; padding:30px 25px;}
+.mb5 .mb5_b .mb5_f_sub2 .imgbox img {width:inherit;}
+.mb5 .mb5_b .movebox {position:absolute; padding: 10px 10px;}
+.mb5 .mb5_b .movebox a {font-weight:bold; color:#fff; font-size:12px; float:right; text-decoration:none;}
+.mb5 .mb5_b .movebox a img {vertical-align: text-top !important;}
+
+/***********************
+  index.html: 기상 현황
+************************/
+.mb6 {height:auto; border: 0px solid;}
+.mb6 .mb6_h {text-align:center; padding:10px 10px; background-color:#385776;}
+.mb6 .mb6_h .title {width:80%;  text-align:center; display:inline-block; padding:5px 0px; background-color:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+.mb6 .mb6_b {background-color:#385776; height:352px; padding:10px 10px;}
+.mb6 .mb6_b .title {color:#fff; font-weight:600; padding:0px 0px 0px 25px;}
+.mb6 .mb6_b .mb6_b_sb1 img {width:inherit; padding:10px 30px 0px 40px;}
+.mb6 .mb6_b .mb6_b_sb2 dl {font-size:18px; color:#fff; font-weight:600; padding-left:30px;}
+
+/***********************
+  content1.html: 태양광
+************************/
+.cot1_s1 {background:#385776;}
+.cot1_s1 .cot1_s1_h {text-align:center; padding:10px 10px;}
+.cot1_s1 .cot1_s1_h .title {width:90%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+.cot1_s1 .cot1_s1_b {background:#385776; padding:0px 10px;}
+.cot1_s1 .cot1_s1_b .cot1_s1_r1 .title {color:#fff; font-weight:600; text-align:left; margin:10px 0px 25px 25px;}
+.cot1_s1 .cot1_s1_b .cot1_s1_contents {position:absolute; text-align:center; width:95%; padding-top:90px;}
+.cot1_s1 .cot1_s1_b .cot1_s1_contents .chart_txt {font-size:20px; color:#fff; font-weight: bold;}
+.cot1_s1 .cot1_s1_b .chart {position: relative; height:250px;}
+.cot1_s1 .cot1_s1_b .cot1_s1_r2 .title {color:#fff; font-weight:600; text-align:left; margin:25px 0px 25px 25px;}
+.cot1_s1 .cot1_s1_b .cot1_s1_r2 hr {margin:0px 25px; border: 2px solid #34495e;}
+.cot1_s1 .cot1_s1_b .cot1_s1_r2 dl {font-size:18px; color:#fff; font-weight:600; margin: 40px auto;}
+.cot1_s1 .cot1_s1_b .cot1_s1_r2 dl dt {padding-left: 30px;}
+.cot1_s1 .cot1_s1_b .cot1_s1_r2 dl dd {padding-left: 30px;}
+
+.cot1_s2 {background:#385776;}
+.cot1_s2 .cot1_s2_h {text-align:center; padding:10px 20px;}
+.cot1_s2 .cot1_s2_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+.cot1_s2 .cot1_s2_b .cot1_s2_btn {background-color:#34495e; font-weight:600; color:#fff; font-size:18px; padding:5px 30px; margin:2px 10px 2px 0px;}
+.cot1_s2 .cot1_s2_b .cot1_s2_chart {position:relative; margin:0px 0px 15px 0px; width:100%; min-height:762px;}
+.cot1_s2 .cot1_s2_b .cot1_s2_chart .chart {position:absolute; left:0; top:0; right:0; bottom:0; overflow:hidden;}
+
+/******************************
+  content2_pv.html: 인버터-PV
+*******************************/
+.cot2_tab1 {background:#385776;}
+.cot2_tab1 .cot2_tab1_h {text-align:left; padding:10px 20px;}
+.cot2_tab1 .cot2_tab1_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+/*tab-list*/
+.cot2_tab1 .cot2_tab1_b .nav-item a {width: 150px; text-align:center; background-color:#34495e; color:#fff; font-weight:600; margin: 0px 10px 0px 0px;}
+.cot2_tab1 .cot2_tab1_b .nav-item a.active {color:#85bd67 !important;}
+
+/*tab-content*/
+.cot2_tab1 .cot2_tab1_b .tab-content hr {margin:20px 0px 19px 0px; border: 2px solid #34495e;}
+.cot2_tab1 .cot2_tab1_b .tab-content .content1 .title {color:#fff; font-weight:600; text-align:left; margin:30px 0px 0px 0px;}
+.cot2_tab1 .cot2_tab1_b .tab-content .content2 .card-body {background-color:#385776;}
+.cot2_tab1 .cot2_tab1_b .tab-content .content2 .card-body .txt {color:#fff; font-weight:400; margin-top:5px;}
+.cot2_tab1 .cot2_tab1_b .tab-content .content2 .card-body .value {float:right; color:#fff; font-weight:400; margin-top:5px;}
+.cot2_tab1 .cot2_tab1_b .tab-content .content3 .card {height:auto; border: 0px solid;}
+.cot2_tab1 .cot2_tab1_b .tab-content .content3 .card-body {background-color:#385776; padding:0px 10px;}
+.cot2_tab1 .cot2_tab1_b .tab-content .content3 .chart {height:184px;}
+.cot2_tab1 .cot2_tab1_b .tab-content .content3 .chart-txt {margin-top:77px; color:#fff; font-weight:400;}
+
+
+/******************************
+  content2_pv.html: 인버터-FC
+*******************************/
+.cot2_tab2 {background:#385776;}
+.cot2_tab2 .cot2_tab2_h {text-align:left; padding:10px 20px;}
+.cot2_tab2 .cot2_tab2_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+/*tab-list*/
+.cot2_tab2 .cot2_tab2_b .nav-item a {width: 150px; text-align:center; background-color:#34495e; color:#fff; font-weight:600; margin: 0px 10px 0px 0px;}
+.cot2_tab2 .cot2_tab2_b .nav-item a.active {color:#85bd67 !important;}
+
+/*tab-content*/
+.cot2_tab2 .cot2_tab2_b .tab-content hr {margin:20px 0px 19px 0px; border: 2px solid #34495e;}
+.cot2_tab2 .cot2_tab2_b .tab-content .content1 .title {color:#fff; font-weight:600; text-align:left; margin:30px 0px 0px 0px;}
+.cot2_tab2 .cot2_tab2_b .tab-content .content2 .card-body {background-color:#385776;}
+.cot2_tab2 .cot2_tab2_b .tab-content .content2 .card-body .txt {color:#fff; font-weight:400; margin-top:5px;}
+.cot2_tab2 .cot2_tab2_b .tab-content .content2 .card-body .value {float:right; color:#fff; font-weight:400; margin-top:5px;}
+.cot2_tab2 .cot2_tab2_b .tab-content .content3 .card {height:auto; border: 0px solid;}
+.cot2_tab2 .cot2_tab2_b .tab-content .content3 .card-body {background-color:#385776; padding:0px 10px;}
+.cot2_tab2 .cot2_tab2_b .tab-content .content3 .chart {height:184px;}
+.cot2_tab2 .cot2_tab2_b .tab-content .content3 .chart-txt {margin-top:77px; color:#fff; font-weight:400;}
+
+
+/******************************
+  content2_pv.html: 인버터-DAB
+*******************************/
+.cot2_tab3 {background:#385776;}
+.cot2_tab3 .cot2_tab3_h {text-align:left; padding:10px 20px;}
+.cot2_tab3 .cot2_tab3_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+/*tab-list*/
+.cot2_tab3 .cot2_tab3_b .nav-item a {width: 150px; text-align:center; background-color:#34495e; color:#fff; font-weight:600; margin: 0px 10px 0px 0px;}
+.cot2_tab3 .cot2_tab3_b .nav-item a.active {color:#85bd67 !important;}
+
+/*tab-content*/
+.cot2_tab3 .cot2_tab3_b .tab-content hr {margin:19px 0px; border: 2px solid #34495E;}
+.cot2_tab3 .cot2_tab3_b .tab-content .content1 .title {color:#fff; font-weight:600; text-align:left; margin:30px 0px 0px 0px;}
+.cot2_tab3 .cot2_tab3_b .tab-content .content2 .card-body {background-color:#385776;}
+.cot2_tab3 .cot2_tab3_b .tab-content .content2 .card-body .txt {color:#fff; font-weight:400; margin-top:5px;}
+.cot2_tab3 .cot2_tab3_b .tab-content .content2 .card-body .value {float:right; color:#fff; font-weight:400; margin-top:5px;}
+.cot2_tab3 .cot2_tab3_b .tab-content .content3 .card {height:auto; border: 0px solid;}
+.cot2_tab3 .cot2_tab3_b .tab-content .content3 .card-body {background-color:#385776; padding:0px 10px;}
+.cot2_tab3 .cot2_tab3_b .tab-content .content3 .chart {height:170px;}
+.cot2_tab3 .cot2_tab3_b .tab-content .content3 .chart-txt {color:#fff; font-weight:400;}
+.mt55 {margin-top:55px !important;}
+.mt75 {margin-top:75px !important;}
+
+
+/************************************
+  content3_bms.html: ESS-BMS
+*************************************/
+.cot3_tab1 {background:#385776;}
+.cot3_tab1 .cot3_tab1_h {text-align:left; padding:10px 20px;}
+.cot3_tab1 .cot3_tab1_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+/*tab-list*/
+.cot3_tab1 .cot3_tab1_b .nav-item a {width: 150px; text-align:center; background-color:#34495e; color:#fff; font-weight:600; margin: 0px 10px 0px 0px;}
+.cot3_tab1 .cot3_tab1_b .nav-item a.active {color:#85bd67 !important;} 
+
+/*tab-content*/
+.cot3_tab1 .cot3_tab1_b .tab-content hr {border-left:5px solid #34495e; height:710px; position:absolute; left:50%; margin-left:0px; top:90px;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content1 .card {background-color:#385776; border:0px solid; text-align:center; margin:20px 0px 0px 0px;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content1 .card-header {background-color:#385776; border:0px solid; margin:20px 0px 22px 0px;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content1 .card-body {margin:40px 0px 0px 0px;}
+
+.cot3_tab1 .cot3_tab1_b .tab-content .content2 .card {background-color:#385776; border:0px solid; text-align:center; margin:20px 0px 22px 0px;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content2 .card-header {background-color:#385776; border:0px solid; margin:20px 0px 0px 0px;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content2 .card-body {margin:40px 0px 0px 0px;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content2 .card-body .con2_box1{text-align:left; color:#fff; font-weight:600;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content2 .card-body .con2_box1 div {margin:0px 0px 20px 160px;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content2 .card-body .con2_box2{display:inline-block; text-align:left; color:#fff; font-weight:600;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content2 .con2_table {display:inline-block; width:85%; margin-top:20px;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content2 .con2_table table {background-color:#385776; color:#fff; font-size:18px; line-height:45px;}
+.cot3_tab1 .cot3_tab1_b .tab-content .content2 .con2_table table thead tr {background-color:#34495e !important;}
+
+/************************************
+  content3_passive.html: ESS-수동제어
+*************************************/
+.cot3_tab2 {background:#385776;}
+.cot3_tab2 .cot3_tab2_h {text-align:left; padding:10px 20px;}
+.cot3_tab2 .cot3_tab2_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+/*tab-list*/
+.cot3_tab2 .cot3_tab2_b .nav-item a {width: 150px; text-align:center; background-color:#34495e; color:#fff; font-weight:600; margin: 0px 10px 0px 0px;}
+.cot3_tab2 .cot3_tab2_b .nav-item a.active {color:#85bd67 !important;} 
+
+/*tab-content*/
+.cot3_tab2 .cot3_tab2_b .tab-content hr {margin:90px auto; border: 2px solid #34495e;}
+.cot3_tab2 .cot3_tab2_b .tab-content .content1 .title {color:#fff; font-weight:600; text-align:left; margin:50px 0px 20px 0px;}
+.cot3_tab2 .cot3_tab2_b .tab-content .content2 {text-align:center;}
+.cot3_tab2 .cot3_tab2_b .tab-content .content2 .con2_btn {width:47.5%; line-height:80px; background-color:#34495e; color:#fff; font-size:24px; font-weight:600; border-radius:15px; margin: 0px 5px 0px 0px;}
+.cot3_tab2 .cot3_tab2_b .tab-content .content2 .con2_btn_box a:hover {background-color:#2c3e50 !important;}
+.cot3_tab2 .cot3_tab2_b .tab-content .content3 .card {background-color:#385776; border:0px solid; text-align:center; margin:20px 0px 0px 0px;}
+.cot3_tab2 .cot3_tab2_b .tab-content .content3 .card-body {margin:20px 0px 50px 0px;}
+.cot3_tab2 .cot3_tab2_b .tab-content .content3 .content3_box {margin-bottom:52px;}
+.cot3_tab2 .cot3_tab2_b .tab-content .content3 .con3_btn {width:49%; line-height:80px; background-color:#34495e; color:#fff; font-size:24px; font-weight:600; border-radius:15px; margin: 0px 5px 0px 0px;}
+.cot3_tab2 .cot3_tab2_b .tab-content .content3 .con3_btn_box a:hover {background-color:#2c3e50 !important;}
+
+/************************************
+  content3_schedule.html: ESS-스케줄제어
+*************************************/
+.cot3_tab3 {background:#385776;}
+.cot3_tab3 .cot3_tab3_h {text-align:left; padding:10px 20px;}
+.cot3_tab3 .cot3_tab3_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+/*tab-list*/
+.cot3_tab3 .cot3_tab3_b .nav-item a {width: 150px; text-align:center; background-color:#34495e; color:#fff; font-weight:600; margin: 0px 10px 0px 0px;}
+.cot3_tab3 .cot3_tab3_b .nav-item a.active {color:#85bd67 !important;} 
+
+/*tab-content*/
+.cot3_tab3 .cot3_tab3_b .tab-content hr {margin:20px 0px; border: 2px solid #34495e;}
+.cot3_tab3 .cot3_tab3_b .tab-content .content1 .title {color:#fff; font-weight:600; text-align:left; margin:50px 0px 30px 0px;}
+.cot3_tab3 .cot3_tab3_b .tab-content .content2 .con3_label {font-size:22px; font-weight:600; color:#fff;}
+.cot3_tab3 .cot3_tab3_b .tab-content .content2 .con3_btn {font-size:22px; font-weight:600; width:200px; height: 50px; box-sizing:border-box; margin: 0px 10px;}
+.cot3_tab3 .cot3_tab3_b .tab-content .content3 .title {color:#fff; font-weight:600; text-align:left; margin:20px 0px 0px 0px;}
+.cot3_tab3 .cot3_tab3_b .tab-content .content4 {color:#fff; background:#2c3e50; margin:0px 0px 42px 0px; padding:35px 10px 25px 10px;}
+.cot3_tab3 .cot3_tab3_b .tab-content .content4 .txt-h {margin-bottom:40px;}
+.cot3_tab3 .cot3_tab3_b .tab-content .content4 .txt {font-size:18px; margin-bottom:20px;}
+
+/************************************
+  content3_history.html: ESS-이력조회
+*************************************/
+.cot3_tab4 {background:#385776;}
+.cot3_tab4 .cot3_tab4_h {text-align:left; padding:10px 20px;}
+.cot3_tab4 .cot3_tab4_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+/*tab-list*/
+.cot3_tab4 .cot3_tab4_b .nav-item a {width: 150px; text-align:center; background-color:#34495e; color:#fff; font-weight:600; margin: 0px 10px 0px 0px;}
+.cot3_tab4 .cot3_tab4_b .nav-item a.active {color:#85bd67 !important;} 
+
+/*tab-content*/
+.cot3_tab4 .cot3_tab4_b .tab-content .content1 .title {color:#fff; font-weight:600; text-align:left; margin:50px 0px 0px 0px;}
+.cot3_tab4 .cot3_tab4_b .tab-content .content2 .con2_btn1 {background-color:#34495e; font-weight:600; color:#fff; font-size:18px; padding:5px 30px;}
+.cot3_tab4 .cot3_tab4_b .tab-content .content3 .con3_table {background-color:#385776; border:0px solid; margin:20px 0px 9px 0px;}
+.cot3_tab4 .cot3_tab4_b .tab-content .content3 .con3_table table {background-color:#385776; color:#fff; font-size:18px; text-align:center;}
+.cot3_tab4 .cot3_tab4_b .tab-content .content3 .con3_table table thead tr {background-color:#34495e !important;}
+
+/***************************************
+  content4_state.html: 전기차-상태
+****************************************/
+.cot4_tab1 {background:#385776;}
+.cot4_tab1 .cot4_tab1_h {text-align:left; padding:10px 20px;}
+.cot4_tab1 .cot4_tab1_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+/*tab-list*/
+.cot4_tab1 .cot4_tab1_b .nav-item a {width: 150px; text-align:center; background-color:#34495e; color:#fff; font-weight:600; margin: 0px 10px 0px 0px;}
+.cot4_tab1 .cot4_tab1_b .nav-item a.active {color:#85bd67 !important;} 
+
+/*tab-content*/
+.cot4_tab1 .cot4_tab1_b .tab-content hr {margin:30px auto; border: 2px solid #34495e;}
+.cot4_tab1 .cot4_tab1_b .tab-content .content1 .title {color:#fff; font-weight:600; text-align:left; margin:50px 0px 40px 40px;}
+.cot4_tab1 .cot4_tab1_b .tab-content .content2 {margin:20px auto;}
+.cot4_tab1 .cot4_tab1_b .tab-content .content2 .content2_s1 img {margin:32px auto; width: 300px;}
+.cot4_tab1 .cot4_tab1_b .tab-content .content2 .content2_s2 dl {color:#fff; font-weight:600; text-align:left; padding: 35px 0px 0px 40px;}
+.cot4_tab1 .cot4_tab1_b .tab-content .content3 .title_1 {color:#fff; font-weight:600; text-align:left; margin:20px 0px 0px 40px;}
+.cot4_tab1 .cot4_tab1_b .tab-content .content3 .title_2 {color:#fff; font-weight:600; text-align:left; margin:20px 0px 0px 0px;}
+.cot4_tab1 .cot4_tab1_b .tab-content .content4 {margin:20px auto;}
+.cot4_tab1 .cot4_tab1_b .tab-content .content4 .dl_1 {color:#fff; font-weight:600; text-align:left; padding: 30px 0px 41px 60px;}
+.cot4_tab1 .cot4_tab1_b .tab-content .content4 .dl_2 {color:#fff; font-weight:600; text-align:left; padding: 30px 0px 41px 50px;}
+
+/***************************************
+  content4_history.html: 전기차-이력조회
+****************************************/
+.cot4_tab2 {background:#385776;}
+.cot4_tab2 .cot4_tab2_h {text-align:left; padding:10px 20px;}
+.cot4_tab2 .cot4_tab2_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+
+/*tab-list*/
+.cot4_tab2 .cot4_tab2_b .nav-item a {width: 150px; text-align:center; background-color:#34495e; color:#fff; font-weight:600; margin: 0px 10px 0px 0px;}
+.cot4_tab2 .cot4_tab2_b .nav-item a.active {color:#85bd67 !important;} 
+
+/*tab-content*/
+.cot4_tab2 .cot4_tab2_b .tab-content .content1 .title {color:#fff; font-weight:600; text-align:left; margin:50px 0px 0px 0px;}
+.cot4_tab2 .cot4_tab2_b .tab-content .content2 .con2_btn1 {background-color:#34495e; font-weight:600; color:#fff; font-size:18px; padding:5px 30px;}
+.cot4_tab2 .cot4_tab2_b .tab-content .content3 .con3_table {background-color:#385776; border:0px solid; margin:20px 0px 9px 0px;}
+.cot4_tab2 .cot4_tab2_b .tab-content .content3 .con3_table table {background-color:#385776; color:#fff; font-size:18px; text-align:center;}
+.cot4_tab2 .cot4_tab2_b .tab-content .content3 .con3_table table thead tr {background-color:#34495e !important;}
+
+/******************************
+  content5.html: RTU 
+*******************************/
+.cot5 {background:#385776;}
+.cot5 .cot5_h {text-align:left; padding:10px 20px;}
+.cot5 .cot5_h .title {width:30%; text-align:center; display:inline-block; padding:5px 0px; background:#34495E; color:#fff; font-weight:600; border-radius: .35rem;}
+.cot5 .cot5_b {padding:0px 10px; background:#385776;}
+.cot5 .cot5_b .title {color:#fff; font-weight:600; text-align:left; margin:27px 30px;}
+.cot5 .cot5_b .cot5_contents {margin: 30px 30px;}
+.cot5 .cot5_b .cot5_contents img {display:block; margin:0px auto;}
+.cot5 .cot5_b .cot5_contents .contents_h {color:#fff; font-weight:600; text-align:center; margin:10px 0px 20px 0px;}
+.cot5 .cot5_b .cot5_contents .contents_f {color:#fff; font-weight:600; text-align:center; margin:10px 0px 50px 0px;}
+
+/* important */
+.color_green {color:#85bd67 !important; font-weight:600 !important;}
+.color_red {color:#ba4747 !important; font-weight:600 !important;}
+.color_white {color:#fff !important; font-weight:600 !important;}
