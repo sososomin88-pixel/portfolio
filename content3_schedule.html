@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>KOPTI EMS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- i Tag CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KOPTI EMS</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">메인</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content1.html">태양광</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content2_pv.html">인버터</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="content3_bms.html">ESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content4_state.html">전기차</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content5.html">RTU</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row mt-4 mb-4">
+
+      <div class="col-lg-12">
+        <div class="cot3_tab3 card">
+
+          <!-- header -->
+          <div class="cot3_tab3_h mx-sm-3">
+            <h4 class="title">ESS 현황</h4>
+          </div>
+
+          <!-- body -->
+          <div class="cot3_tab3_b card-body">
+
+            <div class="row mx-sm-3 mr-4">
+              <div class="col-md-12 m-0 p-0">
+
+                <!-- tab-list -->
+                <ul class="nav nav-pills mb-3 h5">
+                  <li class="nav-item">
+                    <a class="nav-link" href="content3_bms.html">BMS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="content3_passive.html">수동제어</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="content3_schedule.html">스케줄제어</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="content3_history.html">이력조회</a>
+                  </li>
+                </ul>
+
+                <!-- tab-content -->
+                <div class="tab-content">
+                  
+                  <div class="content1 row mb-2 mb-xl-4">
+                    <div class="col-auto d-none d-sm-block">
+                      <h4 class="title">ESS 스케줄 제어</h4>
+                    </div>
+                  </div>
+                                    
+                  <div class="content2 row">                      
+                    <div class="col-md-6">
+                      <form>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="con3_label col-sm-2 col-form-label col-form-label-lg">스케줄 선택</label>
+                          <div class="col-sm-10">
+                            <select class="form-control form-control-lg">
+                              <option>CASE 1</option>
+                              <option>CASE 2</option>
+                              <option>CASE 3</option>
+                              <option>CASE 4</option>
+                              <option>CASE 5</option>
+                              <option>CASE 6</option>
+                              <option>CASE 7</option>
+                              <option>CASE 8</option>
+                              <option>CASE 9</option>
+                              <option>CASE 10</option>
+                              <option>CASE 11</option>
+                              <option>CASE 12</option>
+                            </select>
+                          </div>
+                        </div>
+                      </form><!-- ./form -->                      
+                    </div>                    
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <input class="btn btn-success con3_btn" type="button" value="운전">
+                        <input class="btn btn-danger con3_btn" type="button" value="정지">  
+                      </div> 
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="content3 row mb-2 mb-xl-4">
+                    <div class="col-auto d-none d-sm-block">
+                      <h4 class="title">스케줄 동작 CASE</h4>
+                    </div>
+                  </div>
+
+                  <div class="content4 row alert">
+                    <div class="col-md-6">
+                      <p class="txt-h h5">정상 동작 CASE</p>
+                      <p class="txt">CASE 1: 부하를 사용하지 않음. PV 발전 없음. ESS SOC 30% 상태. EV 충전 요구</p>
+                      <p class="txt">CASE 2: 부하를 사용하지 않음. PV 발전 없음. ESS SOC 31%~90% 상태. 피크부하시간 외</p>
+                      <p class="txt">CASE 3: 부하를 사용하지 않음. PV 발전. ESS SOC 31%~90% 상태. 피크부하시간</p>
+                      <p class="txt">CASE 4: 부하 사용(0kW~40kW). PV 발전 없음. ESS SOC 31%~90% 상태. 피크부하시간 외</p>
+                      <p class="txt">CASE 5: 부하 사용(41kW~50kW). PV 발전 없음. ESS SOC 31%~90% 상태. 피크부하시간</p>
+                      <p class="txt">CASE 6: 부하 사용(0kW~40kW). PV 발전. ESS SOC 31%~90% 상태. 피크부하시간 외</p>
+                      <p class="txt">CASE 7: 부하 사용(41kW~50kW). PV 발전. ESS SOC 31%~90% 상태. 피크부하시간</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="txt-h h5">FAULT시 동작 CASE</p>
+                      <p class="txt">CASE 8: 계통정전. 부하사용(중요부하). PV 발전. ESS SOC 31%~90% 상태. 중요부하는 EMS에서 설정</p>
+                      <p class="txt">CASE 9: PV DC / DC Converter Fault 시</p>
+                      <p class="txt">CASE 10: ESS(RFB) DC / DC Converter Fault 시</p>
+                      <p class="txt">CASE 11: Fuel Cell DC / DC Converter Fault 시</p>
+                      <p class="txt">CASE 12: Arc 검출 시</p>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- ./tab-content -->
+
+              </div>
+            </div>
+          </div>         
+
+        </div>
+        <!-- ./card --> 
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Highchart core JavaScript -->
+  <script type="text/javascript" src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/accessibility.js"></script>
+    
+  <!-- js --> 
+  <script type="text/javascript" src="js/content3_schedule.js"></script>
+
+</body>
+
+</html>

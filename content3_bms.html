@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>KOPTI EMS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- i Tag CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KOPTI EMS</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">메인</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content1.html">태양광</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content2_pv.html">인버터</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="content3_bms.html">ESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content4_state.html">전기차</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content5.html">RTU</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row mt-4 mb-4">
+
+      <div class="col-lg-12">
+        <div class="cot3_tab1 card">
+
+          <!-- header -->
+          <div class="cot3_tab1_h mx-sm-3">
+            <h4 class="title">ESS 현황</h4>
+          </div>
+
+          <!-- body -->
+          <div class="cot3_tab1_b card-body">
+
+            <div class="row mx-sm-3 mr-4">
+              <div class="col-md-12 m-0 p-0">
+
+                <!-- tab-list -->
+                <ul class="nav nav-pills mb-3 h5">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="content3_bms.html">BMS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="content3_passive.html">수동제어</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="content3_schedule.html">스케줄제어</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="content3_history.html">이력조회</a>
+                  </li>
+                </ul>
+
+                <!-- tab-content -->
+                <div class="tab-content">
+                  <div class="row">
+
+                    <div class="content1 col-lg-6 mb-4">
+                      <div class="card">                        
+                        <div class="card-header">
+                          <h4 class="color_white">BMS 상태 현황</h4>
+                        </div>
+                        <div class="card-body">
+                          <div class="form-row" style='margin-bottom:130px;'>
+                            <div class="form-group col-md-6">
+                              <div class="color_white d-inline-block h5">
+                                <span>ESS 충.방전 상태</span>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <div class="color_white d-inline-block h5">
+                                <span>충전</span>
+                                <span class="color_green"><i class="fas fa-caret-left"></i></span>
+                                <span class="color_green"><i class="fas fa-caret-right"></i></span>
+                                <span>방전</span>
+                              </div>
+                            </div>              
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <div class="color_white d-inline-block h5">
+                                <div class="mb-4">전압</div>
+                                <div class="mb-4">전류</div>
+                                <div class="mb-4">설정된 최대 전압</div>
+                                <div class="mb-4">설정된 최소 접압</div>
+                                <div class="mb-4">SOC</div>
+                                <div class="mb-4">SOH</div>
+                                <div class="mb-4">최대온도</div>
+                                <div class="mb-4">최소온도</div>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <div class="color_white d-inline-block h5">
+                                <div class="mb-4">00000,00 <span class="ml-2">V</span></div>
+                                <div class="mb-4">00000,00 <span class="ml-2">A</span></div>
+                                <div class="mb-4">00000,00 <span class="ml-2">V</span></div>
+                                <div class="mb-4">00000,00 <span class="ml-2">V</span></div>
+                                <div class="mb-4">100 <span class="ml-2">%</span></div>
+                                <div class="mb-4">0 <span class="ml-2">%</span></div>
+                                <div class="mb-4">00.00 <span class="ml-2">℃</span></div>
+                                <div class="mb-4">00.00 <span class="ml-2">℃</span></div>
+                              </div>
+                            </div>   
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="content2 col-lg-6 mb-4">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="color_white">Rack 현황</h4>
+                        </div>
+                        <div class="card-body">
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <div class="con2_box1 h5">
+                                <div>전압</div>
+                                <div>전류</div>
+                                <div>SOC</div>
+                                <div>SOH</div>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <div class="con2_box2 h5">
+                                <div class="mb-3">0,000,000 <span class="ml-2">V</span></div>
+                                <div class="mb-3">0,000,000 <span class="ml-2">A</span></div>
+                                <div class="mb-3">100 <span class="ml-2">%</span></div>
+                                <div class="mb-3">0 <span class="ml-2">%</span></div>
+                              </div>
+                            </div> 
+                          </div>
+                          <div class="con2_table form-row">
+                            <div class="form-group col-md-12">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Tray</th>
+                                    <th scope="col">최대전압 (V)</th>
+                                    <th scope="col">최소전압 (V)</th>
+                                    <th scope="col">최대온도 (℃)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">#1</th>
+                                    <td>00,000</td>
+                                    <td>0000</td>
+                                    <td>00.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">#2</th>
+                                    <td>00,000</td>
+                                    <td>0000</td>
+                                    <td>00.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">#3</th>
+                                    <td>00,000</td>
+                                    <td>0000</td>
+                                    <td>00.00</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">#4</th>
+                                    <td>00,000</td>
+                                    <td>0000</td>
+                                    <td>00.00</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>   
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- ./row -->
+                </div>
+                <!-- ./tab-content -->
+
+              </div>
+            </div>
+          </div>
+          <!-- ./body -->           
+
+        </div>
+        <!-- ./card --> 
+      </div>
+
+    </div>
+    <!-- /.row -->    
+    
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <!-- <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+  </footer> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Highchart core JavaScript -->
+  <script type="text/javascript" src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/accessibility.js"></script>
+    
+  <!-- js --> 
+  <script type="text/javascript" src="js/content3_bms.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>KOPTI EMS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- i Tag CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KOPTI EMS</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">메인</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content1.html">태양광</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content2_pv.html">인버터</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content3_bms.html">ESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content4_state.html">전기차</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content5.html">RTU</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+    <!--------------------------------------------------------------------------------------->
+    <!---------------------------------------- row_1 ---------------------------------------->
+    <!--------------------------------------------------------------------------------------->
+    <div class="row mt-4">   
+
+      <!-- 태양광 발전 현황 -->
+      <div class="col-lg-4">
+        <div class="mb1 card">
+          
+          <!-- header -->
+          <div class="mb1_h">
+            <h4 class="title">태양광 발전 현황</h4>
+          </div>
+
+          <!-- body -->
+          <div class="mb1_b card-body">
+            <div class="form-row">
+              <div class="mb1_b_sb1 form-group col-md-6">
+                <h5 class="title mb-3">현재출력</h5>
+                <div class="contents">
+                    <span class="chart_txt">80kWh</span>
+                    <br>
+                    <span class="chart_txt">100%효율</span>
+                </div>
+                <div class="chart highcharts-figure" id="chart3"></div><!--chart3-->
+              </div>
+              <div class="mb1_b_sb2 form-group col-md-6">
+                <h5 class="title mb-3">발전현황</h5>
+                <dl class="row">
+                  <dt class="col-sm-4 mb-1">금일</dt>
+                  <dd class="col-sm-8 mb-1">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-4 mb-1">주간</dt>
+                  <dd class="col-sm-8 mb-1">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-4 mb-1">월간</dt>
+                  <dd class="col-sm-8 mb-1">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-4 mb-1">연간</dt>
+                  <dd class="col-sm-8 mb-1">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-4 mb-1">누적</dt>
+                  <dd class="col-sm-8 mb-1">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-4 mb-1">CO2</dt>
+                  <dd class="col-sm-8 mb-1">00000,00 <span class="ml-2">Ton</span></dd>
+                  <dt class="col-sm-4 mb-1">식수량</dt>
+                  <dd class="col-sm-8 mb-1">00000,00 <span class="ml-2">그루</span></dd>
+                </dl>
+              </div>              
+            </div>
+          </div>
+
+          <!-- footer -->
+          <div class="mb1_f card-footer">
+            <div class="row">
+              <div class="mb1_f_chart col-12" id="chart1"></div><!--chart1-->
+              <div class="mb1_f_move col-12">
+                <a href="content1.html">태양광 이동 <img src="images/bt_next.png" alt="이동버튼"/></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 인버터 발전 현황 -->
+      <div class="col-lg-4">
+        <div class="mb2 card">
+
+          <!-- header -->
+          <div class="mb2_h">
+            <h4 class="title">인버터 발전 현황</h4>
+          </div>
+
+          <!-- body -->
+          <div class="mb2_b card-body">
+            <div class="form-group row">
+              <div class="form-group col-md-4">
+                <div class="nav flex-column nav-pills m-i-list" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="m-i-btn nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">PV</a>
+                  <a class="m-i-btn nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">FC</a>
+                  <a class="m-i-btn nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">DAB</a>
+                </div>
+              </div>
+              <div class="form-group col-md-8">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="mb2_b_pv tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <h5 class="title mb-3">인버터 개별</h5>
+                    <dl class="row">
+                      <dt class="col-sm-4 mb-2">PV 인버터</dt>
+                      <dd class="col-sm-8 mb-2">00000,00 <span class="ml-2">kW</span></dd>
+                      <dt class="col-sm-4 mb-2">통신상태</dt>
+                      <dd class="col-sm-8 mb-2">
+                        <span class="color_green">정상</span>
+                        <span class="color_red">오류</span>
+                      </dd>
+                      <dt class="col-sm-4 mb-2">장치상태</dt>
+                      <dd class="col-sm-8 mb-2">
+                        <span class="color_green">정상</span>
+                        <span class="color_red">오류</span>
+                      </dd>
+                      <br><br><br><br>
+                      <dt class="col-sm-4 mb-2">최종응답</dt>
+                      <dd class="col-sm-8 mb-2">0000-00-00 00:00:00</dd>
+                    </dl>
+                  </div>
+                  <div class="mb2_b_fc tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <h5 class="title mb-3">인버터 개별</h5>
+                    <dl class="row">
+                      <dt class="col-sm-4 mb-2">FC 인버터</dt>
+                      <dd class="col-sm-8 mb-2">00000,00 <span class="ml-2">kW</span></dd>
+                      <dt class="col-sm-4 mb-2">통신상태</dt>
+                      <dd class="col-sm-8 mb-2">
+                        <span class="color_green">정상</span>
+                        <span class="color_red">오류</span>
+                      </dd>
+                      <dt class="col-sm-4 mb-2">장치상태</dt>
+                      <dd class="col-sm-8 mb-2">
+                        <span class="color_green">정상</span>
+                        <span class="color_red">오류</span>
+                      </dd>
+                      <br><br><br><br>
+                      <dt class="col-sm-4 mb-2">최종응답</dt>
+                      <dd class="col-sm-8 mb-2">0000-00-00 00:00:00</dd>
+                    </dl>
+                  </div>
+                  <div class="mb2_b_dab tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <h5 class="title mb-3">인버터 개별</h5>
+                    <dl class="row">
+                      <dt class="col-sm-4 mb-2">DAB 인버터</dt>
+                      <dd class="col-sm-8 mb-2">00000,00 <span class="ml-2">kW</span></dd>
+                      <dt class="col-sm-4 mb-2">배터리 충전량</dt>
+                      <dd class="col-sm-8 mb-2">00000,00 <span class="ml-2">kW</span></dd>
+                      <dt class="col-sm-4 mb-2">배터리 방전량</dt>
+                      <dd class="col-sm-8 mb-2">00000,00 <span class="ml-2">kW</span></dd>
+                      <dt class="col-sm-4 mb-2">통신상태</dt>
+                      <dd class="col-sm-8 mb-2">
+                        <span class="color_green">정상</span>
+                        <span class="color_red">오류</span>
+                      </dd>
+                      <dt class="col-sm-4 mb-2">장치상태</dt>
+                      <dd class="col-sm-8 mb-2">
+                        <span class="color_green">정상</span>
+                        <span class="color_red">오류</span>
+                      </dd>
+                      <dt class="col-sm-4 mb-2">최종응답</dt>
+                      <dd class="col-sm-8 mb-2">0000-00-00 00:00:00</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <div class="mb2_f card-footer">
+            <div class="row">
+              <div class="mb2_f_sb1 col-2">
+                <div class="mb2_f_sb1_contents">
+                  <div class="con_title">용량</div>
+                  <div class="con_value">100%</div>
+                </div>
+              </div>
+              <div class="mb2_f_sb2 col-10">
+                <img src="images/inv_0.png" alt="inverter_0" style="display:none;">
+                <img src="images/inv_1.png" alt="inverter_1" style='display:none;'>
+                <img src="images/inv_2.png" alt="inverter_2" style='display:none;'>
+                <img src="images/inv_3.png" alt="inverter_3" style='display:none;'>
+                <img src="images/inv_4.png" alt="inverter_4" style='display:none;'>
+                <img src="images/inv_5.png" alt="inverter_5" style='display:none;'>
+                <img src="images/inv_6.png" alt="inverter_6" style='display:none;'>
+                <img src="images/inv_7.png" alt="inverter_7" style='display:none;'>
+                <img src="images/inv_8.png" alt="inverter_8" style='display:block;'>
+                <img src="images/inv_9.png" alt="inverter_9" style='display:none;'>
+                <img src="images/inv_10.png" alt="inverter_10" style='display:none;'>
+              </div>              
+              <div class="mb2_f_move col-12">
+                <a href="content2_pv.html">인버터 이동 <img src="images/bt_next.png" alt="이동버튼"/></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ESS 발전 현황 -->
+      <div class="col-lg-4">
+        <div class="mb3 card">
+
+          <!-- header -->
+          <div class="mb3_h">
+            <h4 class="title">ESS 발전 현황</h4>
+          </div>
+
+          <!-- body -->
+          <div class="mb3_b card-body">
+            <div class="form-row">
+              <div class="mb3_b_sb1 form-group col-md-6">
+                <h5 class="title mb-2">SOC</h5>
+                <div class="contents">
+                  <span class="chart_txt">100%</span>
+                </div>
+                <div class="chart highcharts-figure" id="chart4"></div><!-- chart4 -->
+              </div>
+              <div class="mb3_b_sb2 form-group col-md-6">
+                <div class="box h5">
+                  <div class="box_title mb-3">ESS 발전 상태</div>
+                  <span class=" color_green">스케줄모드</span>
+                </div>
+                <hr>
+                <div class="box h5">
+                  <div class="box_title mb-3">ESS 충방전 상태</div>
+                  <span class="color_white">충전</span>
+                  <span class="color_green"><i class="fas fa-caret-left"></i></span>
+                  <span class="color_green"><i class="fas fa-caret-right"></i></span>
+                  <span class="color_white">방전</span>
+                </div>
+              </div>              
+            </div>
+          </div>
+          
+          <!-- footer -->
+          <div class="mb3_f card-footer">
+            <div class="row">
+              <div class="mb3_f_chart col-12" id="chart2"></div><!--chart2-->
+              <div class="mb3_f_move col-12">
+                <a href="content3_bms.html">ESS 이동 <img src="images/bt_next.png" alt="이동버튼"></a> 
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <!--------------------------------------------------------------------------------------->
+    <!---------------------------------------- row_2 ---------------------------------------->
+    <!--------------------------------------------------------------------------------------->
+    <div class="row mt-4">
+
+      <!-- 전기차 충전기 현황 -->
+      <div class="col-lg-4">
+        <div class="mb4 card">
+          
+          <!-- header -->
+          <div class="mb4_h">
+            <h4 class="title">전기차 충전기 현황</h4>
+          </div>
+
+          <!-- body -->
+          <div class="mb4_b card-body">
+            <div class="form-row">
+              <div class="mb4_b_sb1 form-group col-md-6">
+                <div class="box h5">
+                  <div class="box_title mb-4">충전기 현재 상태</div>
+                  <span class="color_white">대기중</span>
+                  <span class="color_green">충전중</span>
+                </div>
+              </div>
+              <div class="mb4_b_sb2 form-group col-md-6">
+                <img src="images/car_1.png" alt="car_1" style="display:block;">
+                <img src="images/car_2.png" alt="car_2" style="display:none;">
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <div class="mb4_f card-footer">
+            <div class="row">
+              <div class="mb4_f_box col-12">
+                <div class="box form-row">
+                  <div class="mb4_f_sb1_box form-group col-md-6">
+                    <h5 class="box_title mb-4">배터리 상태</h5>
+                    <dl class="box_value row">
+                      <dt class="col-sm-6">충전 가능 시간</dt>
+                      <dd class="col-sm-6">0000000 <span class="ml-2">시간</span></dd>
+                      <dt class="col-sm-6">충전 가능 차량</dt>
+                      <dd class="col-sm-6">0000000 <span class="ml-2">대</span></dd>
+                    </dl>
+                  </div>
+                  <div class="mb4_f_sb2_box form-group col-md-6">
+                    <img src="images/battery_0.png" alt="battery_0" style="display:none;">
+                    <img src="images/battery_1.png" alt="battery_1" style="display:none;">
+                    <img src="images/battery_2.png" alt="battery_2" style="display:none;">
+                    <img src="images/battery_3.png" alt="battery_3" style="display:block;">
+                    <img src="images/battery_4.png" alt="battery_4" style="display:none;">
+
+                    <div class="img_txt">
+                      <span class="color_white">충전률</span>
+                      <span class="color_white ml-4">100%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb4_f_move col-12" >
+                <a href="content4.html">전기차 이동 <img src="images/bt_next.png" alt="이동버튼"></a> 
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RTU 현황 -->
+      <div class="col-lg-4">
+        <div class="mb5 card">
+          
+          <!-- header -->
+          <div class="mb5_h">
+            <h4 class="title">RTU 현황</h4>
+          </div>
+
+          <!-- body -->
+          <div class="mb5_b card-body">
+            <div class="form-row">
+              <div class="mb5_f_sub1 form-group col-md-8">
+                <h5 class="title mb-4">분기별 MCCB 및 전력량</h5>
+                <div class="box">
+                  <div class="box_title">채널 선택</div>
+                  <span class="box_value">1CH</span>
+                </div>
+                <hr>
+                <div class="box2">
+                  <dl class="row">
+                    <dt class="col-sm-7">통신상태 및 MCCB상태</dt>
+                    <dd class="col-sm-5">
+                      <span class="color_green">ON</span>
+                      <span class="color_red">OFF</span>
+                    </dd>
+                    <dt class="col-sm-7">전력량</dt>
+                    <dd class="col-sm-5">00000,00 <span class="ml-2">kW</span></dd>
+                    <dt class="col-sm-7">경보 및 알람</dt>
+                    <dd class="col-sm-5">
+                      <span class="color_white">정상</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="mb5_f_sub2 form-group col-md-4">
+                <div class="imgbox col-12">
+                <img src="images/breaker_on.png" alt="breaker_on" style="display:none;">
+                <img src="images/breaker_off.png" alt="breaker_off" style="display:block;">
+                </div>
+                <div class="movebox col-12">
+                  <a href="content5.html">RTU 이동 <img src="images/bt_next.png" alt="이동버튼"/></a>
+                </div>
+              </div>             
+            </div>
+          </div>
+
+          <!-- footer -->
+          <!-- <div class="card-footer" style='background: #34495E; padding: 10px 10px;'></div> -->
+        </div>
+      </div>
+
+      <!-- 기상 현황 -->
+      <div class="col-lg-4">
+        <div class="mb6 card">
+          
+          <!-- header -->
+          <div class="mb6_h">
+            <h4 class="title">기상 현황</h4>
+          </div>
+
+          <!-- body -->
+          <div class="mb6_b card-body">            
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <h5 class="title mb-4">현재시각 날씨 정보</h5>
+              </div>
+              <div class="mb6_b_sb1 form-group col-md-5">
+                <img src="images/w_sun.png" alt="sun" style="display:none;">
+                <img src="images/w_rain.png" alt="rain" style="display:block;">
+                <img src="images/w_cloud.png" alt="rain" style="display:none;">
+                <img src="images/w_snow.png" alt="rain" style="display:none;">
+              </div>
+              <div class="mb6_b_sb2 form-group col-md-7">
+                <br><br>
+                <dl class="row">
+                  <dt class="col-sm-4 mb-2">일사량</dt>
+                  <dd class="col-sm-8 mb-2">0000.00 <span class="ml-2">kW/h㎥</span></dd>
+                  <dt class="col-sm-4 mb-2">풍향.풍속</dt>
+                  <dd class="col-sm-8 mb-2">0000.00 <span class="ml-2">m/s</span> 북서풍 </dd>
+                  <dt class="col-sm-4 mb-2">대기온도</dt>
+                  <dd class="col-sm-8 mb-2">00.00 <span class="ml-2">℃</span></dd>
+                  <dt class="col-sm-4 mb-2">습도</dt>
+                  <dd class="col-sm-8 mb-2">100 <span class="ml-2">%</span></dd>                  
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <!-- <div class="card-footer" style='background: #34495E; padding: 10px 10px;'></div> -->
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+    
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <!-- <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+  </footer> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Highchart core JavaScript -->
+  <script type="text/javascript" src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/accessibility.js"></script>
+    
+  <!-- js --> 
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>

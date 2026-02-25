@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>KOPTI EMS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- i Tag CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KOPTI EMS</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">메인</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="content1.html">태양광</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content2_pv.html">인버터</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content3_bms.html">ESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content4_state.html">전기차</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="content5.html">RTU</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- row -->
+    <div class="row mt-4">
+
+      <!-- 태양광 발전 현황-->
+      <div class="col-lg-3">
+        <div class="cot1_s1 card">
+
+          <div class="cot1_s1_h">
+            <h4 class="title">태양광 발전 현황</h4>
+          </div>
+          
+          <div class="cot1_s1_b card-body">
+            <div class="cot1_s1_r1 row">
+              <div class="col-md-12">
+                <h5 class="title">현재출력</h5>
+                <div class="cot1_s1_contents">
+                    <span class="chart_txt">80kWh</span>
+                    <br>
+                    <span class="chart_txt">100%효율</span>
+                </div>
+                <div class="chart highcharts-figure" id="chart2"></div><!-- chart2 -->
+              </div>            
+            </div>
+            <div class="cot1_s1_r2 row">
+              <div class="col-md-12">
+                <h5 class="title">발전현황</h5>
+                <dl class="row">
+                  <dt class="col-sm-6 mb-2">금일</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-6 mb-2">주간</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-6 mb-2">월간</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-6 mb-2">연간</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-6 mb-2">누적</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">kWh</span></dd>
+                  <dt class="col-sm-6 mb-2">CO2</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">Ton</span></dd>
+                  <dt class="col-sm-6 mb-2">식수량</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">그루</span></dd>
+                </dl>
+                <hr>
+                <dl class="row">
+                  <dt class="col-sm-6 mb-2">그리드 전압</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">V</span></dd>
+                  <dt class="col-sm-6 mb-2">그리드 주파수</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">Hz</span></dd>
+                  <dt class="col-sm-6 mb-2">PV Input Voltage</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">V</span></dd>
+                  <dt class="col-sm-6 mb-2">현재 발전량</dt>
+                  <dd class="col-sm-6 mb-2">00000,00 <span class="ml-2">kW</span></dd>
+                </dl>
+              </div>  
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 태양광 발전 이력-->
+      <div class="col-lg-9 mb-4">
+        <div class="cot1_s2 card">
+         
+          <div class="cot1_s2_h mx-sm-3">
+            <h4 class="title">태양광 발전 이력조회</h4>
+          </div>
+          
+          <div class="cot1_s2_b card-body">            
+            <form class="form-inline mx-sm-3 mt-4 mb-4">
+              <div class="form-group mr-4">
+                <label for="inputDate" class="sr-only">Date</label>
+                <input type="date" class="form-control" id="inputDate">
+              </div>
+              <button type="button" class="btn cot1_s2_btn">발전동향</button>
+              <button type="button" class="btn cot1_s2_btn">일일발전</button>
+              <button type="button" class="btn cot1_s2_btn">월간발전</button>
+              <button type="button" class="btn cot1_s2_btn">년간발전</button>
+            </form>            
+            <div class="cot1_s2_chart row">
+              <div class="chart col-12" id="chart1"></div><!--chart1-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <!-- <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+  </footer> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Highchart core JavaScript -->
+  <script type="text/javascript" src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/accessibility.js"></script>
+    
+  <!-- js --> 
+  <script type="text/javascript" src="js/content1.js"></script>
+
+</body>
+
+</html>
